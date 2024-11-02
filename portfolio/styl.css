@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #212f3d;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #feb47b;
+    transform: scale(1.1);
+}
+
+header {
+    padding: 6rem 2rem;
+    margin-top: 50px; 
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#introduction{
+    margin-top: 0.5rem;;
+    background: linear-gradient(135deg, #1f0d3f, #4977e2);
+    color: white;
+    text-align: center;
+    z-index: 100;
+}
+
+#abt{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.abt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+}
+
+.abt-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+    list-style: none;
+}
+.abt-card:hover {
+    transform: scale(1.05);
+}
+
+#skills{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+    color: #ff7e5f;
+}
+
+.skill-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+    display: flex;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+#experience{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+}
+
+.experience-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
+
+
+#achievements{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+    list-style: none;
+}
+
+.achievements-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+    list-style: none;
+}
+.achievements-card:hover {
+    transform: scale(1.05);
+}
+
+#hobbies{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+}
+
+.hobbies-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+    list-style: none;
+}
+.hobbies-card:hover {
+    transform: scale(1.05);
+}
+
+#contact{
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #ea481f, #d07a39);
+}
+
+.contact-card {
+    background-color: #f4f4f4;
+    color: #ff7e5f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    animation: fadeInCard 0.8s ease; 
+    list-style: none;
+}
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+@media (max-width: 1100px) {
+    header {
+        background-image: url('background_1.png'); 
+        animation: fadeInBackground 1.5s ease-in-out;
+    }
+}
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+        background-position: top;
+    }
+    to {
+        opacity: 1;
+        background-position: center;
+    }
+}
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+    #achievements {
+        padding-top: 6.2rem; 
+    }
+    #skills {
+        padding-top: 6.2rem; 
+    }
+    #hobbies {
+        padding-top: 6.2rem; 
+    }
+    #experience {
+        padding-top: 6.2rem; 
+    }
+    #abt {
+        padding-top: 6.2rem; 
+    }
+    #contact {
+        padding-top: 6.2rem; 
+    }
+}
